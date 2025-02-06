@@ -1,0 +1,100 @@
+// 顶部 Header 样式
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4.24vw 3.47vw 0;
+  // position: sticky;
+  // top: 0;
+  // z-index: 2;
+  background-color: #101010;
+
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    a {
+      text-decoration: none;
+      color: #aaa;
+      transition: color 0.3s;
+
+      padding: 8px 12px;
+      border-radius: 5px;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+  // 小屏菜单按钮
+  .menuButton {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+      color: #6c63ff;
+    }
+  }
+
+  .connectButton {
+    height: 3.89vw;
+    width: 15.83vw;
+    color: #6EF000;
+    border: 1px solid #6EF000;
+    border-radius: .69vw;
+    font-size: 1.67vw;
+
+    &:hover {
+      background: #6EF000;
+      color: #101010;
+      transition: all 0.3s;
+    }
+  }
+
+  // 响应式导航栏
+  // @media (max-width: 768px) {
+  //   .nav {
+  //     display: none; // 默认隐藏菜单
+  //     flex-direction: column;
+  //     position: absolute;
+  //     top: 60px;
+  //     right: 20px;
+  //     background: rgba(0, 0, 0, 0.9);
+  //     border-radius: 10px;
+  //     padding: 10px 20px;
+  //     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  //     z-index: 1000;
+
+  //     a {
+  //       margin-bottom: 10px;
+  //     }
+
+  //     .connectButton {
+  //       margin-top: 10px;
+  //       width: 100%;
+  //     }
+  //   }
+
+  //   // 菜单打开时显示
+  //   .open {
+  //     display: flex;
+  //   }
+
+  //   // 菜单按钮在小屏显示
+  //   .menuButton {
+  //     display: block;
+  //   }
+  // }
+}

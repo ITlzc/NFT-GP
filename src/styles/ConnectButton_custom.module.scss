@@ -1,0 +1,17 @@
+.connectButton {
+  height: 3.89vw;
+  width: 15.83vw;
+  color: #6EF000;
+  border: 1px solid #6EF000;
+  border-radius: .69vw;
+  font-size: 1.67vw;
+  font-weight: 600;
+  font-family: Graphik;
+
+
+  &:hover {
+    background: #6EF000;
+    color: #101010;
+    transition: all 0.3s;
+  }
+}
